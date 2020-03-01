@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CatTracks</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="main.js"></script>
+    <style>
+        h3 {
+            font-size: 20px;
+        }
+        .header {
+            background-image: url(https://i.gifer.com/YTcn.gif);
+            color: white;
+        }
+        .container-fluid {
+            padding: 2vw;
+            margin: auto;
+        }
+        .title {
+            text-align: center;
+            padding: 4vw;
+            font-family: sans-serif;
+
+        }
+        .row {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="title"><img src="https://images.cooltext.com/5386658.gif"></h1>
+    </div>
+    <div class="container-fluid">
+        <div class="forms">
+            <div class="row">
+                <div class="col">
+                    <h3>Starting Point</h3>
+                    <select class="form-control" id="start">
+                        <option value="Student Activities and Athletics Ctr" selected>Student Activities and Athletics Center</option>
+                        <option value="Emigrant Pass at Scholars Ln">Emigrant Pass at Scholars Ln</option>
+                        <option value="Village Terrace Apts/R Street">Village Terrace Apts/R Street</option>
+                        <option value="El Redondo Dr">El Redondo Dr</option>
+                        <option value="Compass Pointe Apts">Compass Pointe Apts</option>
+                        <option value="Buena Vista Dr">Buena Vista Dr</option>
+                        <option value="Merced Mall/Target">Merced Mall/Target</option>
+                        <option value="Villages Apts/M St">Villages Apts/M St</option>
+                        <option value="Merced College">Merced College</option>
+                        <option value="Ironstone Dr">Ironstone Dr</option>
+                        <option value="Bellevue Ranch on Arrow Wood Dr">Bellevue Ranch on Arrow Wood Dr</option>
+                        <option value="Granville Apts">Granville Apts</option>
+                        <option value="Walmart on Loughborough Dr">Walmart on Loughborough Dr</option>
+                        <option value="Food Maxx/Meadows Ave and Olivewood Dr">Food Maxx/Meadows Ave and Olivewood Dr</option>
+                        <option value="G St and W. Alexander Ave">G St and W. Alexander Ave</option>
+                        <option value="Rite Aid/Walgreens">Rite Aid/Walgreens</option>
+                        <option value="El Portal/G St">El Portal/G St</option>
+                        <option value="Mercy Hospital/Tri-College">Mercy Hospital/Tri-College</option>
+                        <option value="Moraga Subdivision">Moraga Subdivision</option>
+                        <option value="Starbucks/Promenade Ctr">Starbucks/Promenade Ctr</option>
+                        <option value="Amtrak Station">Amtrak Station</option>
+                        <option value="K St between 18th and 19th">K St between 18th and 19th</option>
+                        <option value="Physicians Care/Yosemite and Cordova">Physicians Care/Yosemite and Cordova</option>
+                        <option value="University Surgery Center">University Surgery Center</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <h3>Destination</h3>
+                    <select class="form-control" id="end">
+                        <option value="Student Activities and Athletics Ctr">Student Activities and Athletics Center</option>
+                        <option value="Emigrant Pass at Scholars Ln">Emigrant Pass at Scholars Ln</option>
+                        <option value="Village Terrace Apts/R Street">Village Terrace Apts/R Street</option>
+                        <option value="El Redondo Dr">El Redondo Dr</option>
+                        <option value="Compass Pointe Apts">Compass Pointe Apts</option>
+                        <option value="Buena Vista Dr">Buena Vista Dr</option>
+                        <option value="Merced Mall/Target" selected>Merced Mall/Target</option>
+                        <option value="Villages Apts/M St">Villages Apts/M St</option>
+                        <option value="Merced College">Merced College</option>
+                        <option value="Ironstone Dr">Ironstone Dr</option>
+                        <option value="Bellevue Ranch on Arrow Wood Dr">Bellevue Ranch on Arrow Wood Dr</option>
+                        <option value="Granville Apts">Granville Apts</option>
+                        <option value="Walmart on Loughborough Dr">Walmart on Loughborough Dr</option>
+                        <option value="Food Maxx/Meadows Ave and Olivewood Dr">Food Maxx/Meadows Ave and Olivewood Dr</option>
+                        <option value="G St and W. Alexander Ave">G St and W. Alexander Ave</option>
+                        <option value="Rite Aid/Walgreens">Rite Aid/Walgreens</option>
+                        <option value="El Portal/G St">El Portal/G St</option>
+                        <option value="Mercy Hospital/Tri-College">Mercy Hospital/Tri-College</option>
+                        <option value="Moraga Subdivision">Moraga Subdivision</option>
+                        <option value="Starbucks/Promenade Ctr">Starbucks/Promenade Ctr</option>
+                        <option value="Amtrak Station">Amtrak Station</option>
+                        <option value="K St between 18th and 19th">K St between 18th and 19th</option>
+                        <option value="Physicians Care/Yosemite and Cordova">Physicians Care/Yosemite and Cordova</option>
+                        <option value="University Surgery Center">University Surgery Center</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Departure Time</h3>
+                    <select class="form-control" id="departure">
+                        <option></option>
+                    </select>
+                </div>
+                <div class="col">
+                    <h3>Heritage Resident?</h3>
+                    <select class="form-control" id="heritage">
+                        <option value="yes">Yes</option>
+                        <option value="no" selected>No</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
