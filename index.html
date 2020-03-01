@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CatTracks</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="buslines.js"></script>
+    <script src="main.js"></script>
+    <style>
+        html,
+        body {
+        height: 100%;
+        position: relative;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        .header {
+            background-color: navy;
+            color: white;
+        }
+        .container-fluid {
+            padding: 2vw;
+            margin: auto;
+            min-height: 100vh; /* will cover the 100% of viewport */
+            overflow: hidden;
+            display: block;
+            position: relative;
+            padding-bottom: 100px; /* height of your footer */
+        }
+        .title {
+            text-align: center;
+            padding: 4vw;
+            font-family: sans-serif;
+
+        }
+        .row {
+            margin-bottom: 15px;
+        }
+        .button {
+            background-color: navy;
+            color: white;
+            border: none;
+            padding: .5vw 1.25vw;
+        }
+        .results {
+            padding: 2vw;
+            margin-top: 2vw;
+        }
+        .footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 2vw;
+            width: 100%;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" style="text-align: center;">
+        <img src="pawprint.png" width="30%" style="margin:2vw;">
+    </div>
+    <div class="container-fluid">
+        <div class="forms">
+            <div class="row">
+                <div class="col">
+                    <h3>Starting Point</h3>
+                    <select class="form-control" id="start">
+                        <option value="0" selected>Student Activities and Athletics Center</option>
+                        <option value="1">Emigrant Pass at Scholars Ln</option>
+                        <option value="2">Village Terrace Apts/R Street</option>
+                        <option value="3">El Redondo Dr</option>
+                        <option value="4">Compass Pointe Apts</option>
+                        <option value="5">Buena Vista Dr</option>
+                        <option value="6">Merced Mall/Target</option>
+                        <option value="7">Villages Apts/M St</option>
+                        <option value="8">Merced College</option>
+                        <option value="9">Ironstone Dr</option>
+                        <option value="10">Bellevue Ranch on Arrow Wood Dr</option>
+                        <option value="11">Granville Apts</option>
+                        <option value="12">Walmart on Loughborough Dr</option>
+                        <option value="13">Food Maxx/Meadows Ave and Olivewood Dr</option>
+                        <option value="14">G St and W. Alexander Ave</option>
+                        <option value="15">Rite Aid/Walgreens</option>
+                        <option value="16">El Portal/G St</option>
+                        <option value="17">Mercy Hospital/Tri-College</option>
+                        <option value="18">Moraga Subdivision</option>
+                        <option value="19">Starbucks/Promenade Ctr</option>
+                        <option value="20">Amtrak Station</option>
+                        <option value="21">K St between 18th and 19th</option>
+                        <option value="22">Physicians Care/Yosemite and Cordova</option>
+                        <option value="23">University Surgery Center</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <h3>Destination</h3>
+                    <select class="form-control" id="end">
+                        <option value="0">Student Activities and Athletics Center</option>
+                        <option value="1">Emigrant Pass at Scholars Ln</option>
+                        <option value="2">Village Terrace Apts/R Street</option>
+                        <option value="3">El Redondo Dr</option>
+                        <option value="4">Compass Pointe Apts</option>
+                        <option value="5">Buena Vista Dr</option>
+                        <option value="6" selected>Merced Mall/Target</option>
+                        <option value="7">Villages Apts/M St</option>
+                        <option value="8">Merced College</option>
+                        <option value="9">Ironstone Dr</option>
+                        <option value="10">Bellevue Ranch on Arrow Wood Dr</option>
+                        <option value="11">Granville Apts</option>
+                        <option value="12">Walmart on Loughborough Dr</option>
+                        <option value="13">Food Maxx/Meadows Ave and Olivewood Dr</option>
+                        <option value="14">G St and W. Alexander Ave</option>
+                        <option value="15">Rite Aid/Walgreens</option>
+                        <option value="16">El Portal/G St</option>
+                        <option value="17">Mercy Hospital/Tri-College</option>
+                        <option value="18">Moraga Subdivision</option>
+                        <option value="19">Starbucks/Promenade Ctr</option>
+                        <option value="20">Amtrak Station</option>
+                        <option value="21">K St between 18th and 19th</option>
+                        <option value="22">Physicians Care/Yosemite and Cordova</option>
+                        <option value="23">University Surgery Center</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Departure Day</h3>
+                    <!-- <input type="time" class="form-control" value="12:00">
+                </div>
+                <div class="col">
+                    <h3>Day</h3> -->
+                    <select class="form-control" id="day">
+                        <option value="0">Sunday</option>
+                        <option value="1">Monday</option>
+                        <option value="1">Tuesday</option>
+                        <option value="1">Wednesday</option>
+                        <option value="1">Thursday</option>
+                        <option value="1">Friday</option>
+                        <option value="0">Saturday</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <h3>Heritage Resident?</h3>
+                    <select class="form-control" id="heritage">
+                        <option value="1">Yes</option>
+                        <option value="0" selected>No</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2vw;">
+            <button class="button" id="submit">Submit</button>
+        </div>
+        <div class="results" style="padding: 4vw;" id="results">
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_contents">
+            <button class="button" onclick='window.location.href = "batshit.html"';>Alternate Dimension</a>
+        </div>
+    
+    </div>
+</body>
+</html>
